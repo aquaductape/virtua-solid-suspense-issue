@@ -53,6 +53,7 @@ export const EntityItem: Component<{
 
 	return (
 		<div
+			data-entity-name={`Entity ${props.index() + 1}`}
 			class="p-4 border-b border-gray-200 cursor-pointer hover:bg-gray-50 transition-colors"
 			classList={{
 				'bg-slate-200': props.index() % 2 === 0,

@@ -18,8 +18,7 @@ interface PanelState {
 
 const PanelManager: Component = () => {
 	const [panels, setPanels] = createStore<PanelState[]>([
-		{ id: '1', size: 50 },
-		{ id: '2', size: 50 },
+		{ id: '1', size: 100 },
 	]);
 	const [isResizing, setIsResizing] = createSignal<number | null>(null);
 	const [resizeStartX, setResizeStartX] = createSignal(0);
