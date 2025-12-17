@@ -1,0 +1,98 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "solid": "all",
+      "react": "none"
+    },
+    "rules": {
+      "a11y": "off",
+      "complexity": {
+        "useArrowFunction": "off",
+        "noBannedTypes": "off",
+        "useOptionalChain": "off",
+        "useLiteralKeys": "off",
+        "noStaticOnlyClass": "off",
+        "noThisInStatic": "off",
+        "noUselessEscapeInRegex": "off",
+        "noUselessEmptyExport": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "off",
+        "noSwitchDeclarations": "off",
+        "useParseIntRadix": "off",
+        "noChildrenProp": "off",
+        "noPrivateImports": "error"
+      },
+      "style": {
+        "useBlockStatements": "off",
+        "useConst": "off",
+        "noNonNullAssertion": "off",
+        "useTemplate": "off",
+        "useLiteralEnumMembers": "off",
+        "useExponentiationOperator": "off"
+        // "noParameterAssign": "error",
+        // "useAsConstAssertion": "error",
+        // "useDefaultParameterLast": "error",
+        // "useEnumInitializers": "error",
+        // "useSelfClosingElements": "error",
+        // "useSingleVarDeclarator": "error",
+        // "noUnusedTemplateLiteral": "error",
+        // "useNumberNamespace": "error",
+        // "noInferrableTypes": "error",
+        // "noUselessElse": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noDocumentCookie": "off",
+        "noImplicitAnyLet": "off",
+        "noGlobalIsNan": "off",
+        "noConfusingVoidType": "off",
+        "useIterableCallbackReturn": "off",
+        "noTsIgnore": "off",
+        "noUselessEscapeInString": "off",
+        "noPrototypeBuiltins": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "nursery": {
+        // "noImportCycles": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  },
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}
